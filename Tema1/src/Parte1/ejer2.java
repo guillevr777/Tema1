@@ -7,16 +7,14 @@ public class ejer2 {
 	public static void main(String[] args) {
 		//creamos el escaner
 		Scanner reader = new Scanner(System.in);
-		//variable para almacenar numero
-		int number;
 		//pedimos numero al usuario
 		System.out.println("introce tu edad");
 		//lee el numero en consola 
-		number = reader.nextInt();
+		int edad = reader.nextInt();
 		//le pedimos que sume un año
-		int a = 1;
+		int edadproxima = edad + 1;
 		//da el numero que dimos
-		System.out.print("El año que viene tendras " + number);
+		System.out.print("El año que viene tendras " + edadproxima +" años");
 		//se cierra el escaner
 		reader.close();
 	}
