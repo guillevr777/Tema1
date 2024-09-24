@@ -12,7 +12,7 @@ public class ejer2 {
 		//lee el numero en consola 
 		int edad = reader.nextInt();
 		//le pedimos que sume un año
-		int edadproxima = edad + 1;
+		int edadproxima = ++edad;
 		//da el numero que dimos
 		System.out.print("El año que viene tendras " + edadproxima +" años");
 		//se cierra el escaner
