@@ -3,7 +3,7 @@ package Parte1;
 import java.util.Scanner;
 
 public class ejer13 {
-	public static void name(String[]args) {
+	public static void main(String[]args) {
 		//creamos el escaner
 		Scanner reader = new Scanner(System.in);
 		//creamos las variables
@@ -21,8 +21,8 @@ public class ejer13 {
 		System.out.println("quieres ir a la biblioteca?");
 		biblio = reader.nextBoolean();
 		//averiguar si puede salir
-		salir = (lluvia && tarea) || biblio;
-		System.out.println("Puedes salir "  + salir );
-		
+		salir = lluvia || tarea && biblio;
+		System.out.println("Puedes salir? "  + salir);
+		reader.close();
 	}
 }
