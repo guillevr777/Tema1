@@ -9,7 +9,7 @@ public class ejer10 {
 		//hacemos las variables
 			
 		int numero;
-		boolean overage;
+		boolean parimpar;
 		
 		//creamos el escaner
 		
@@ -23,11 +23,11 @@ public class ejer10 {
 		
 		//usamos relacionales , si la edad es supeior a 18 true sino false
 		
-		overage = numero % 2 == 0;
+		parimpar = numero % 2 == 0;
 		
 		//pone la respuesta en pantalla
 		
-		System.out.print(overage);
+		System.out.print(parimpar);
 			
 		reader.close();
 		}
