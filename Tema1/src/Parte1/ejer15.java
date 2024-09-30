@@ -20,9 +20,6 @@ public class ejer15 {
 		//le decimos el iva que lleva el numero
 		System.out.println("El precio ascendera a " + conIva + " con el iva incluido , seran " + iva + " euros mas con el iva");
 		//cerramos el escaner
-		reader.close();
-		
-		
-		
+		reader.close();	
 	}
 }

@@ -10,16 +10,14 @@ public class ejer17 {
 	//creamos las variables
 	int numero;
 	int resultado;
-	int numero2;
 	//le preguntamos por un numero
 	System.out.println("Dime un numero");
 	//recogemos el numero
 	numero = reader.nextInt();
 	//calculamos el resto
-	numero2 = 7%numero;
-	resultado = (numero2 - numero) +7 ;
+	resultado = (7 -(numero%7)) %7;
 	//le decimos el resultado
-	System.out.println("El resto sera " + resultado);
+	System.out.println("El resto sera " + resultado + " , tendrias que sumarselo a tu numero para que te de 7.");
 	//cerramos el escaner
 	reader.close();
 	}
