@@ -8,17 +8,14 @@ public class ejer16 {
 	//creamos el escaner
 	Scanner reader = new Scanner(System.in);
 	//Definimos las variables
-	double resultado;
-	int numero;
+	double numero;
 	//le pedimos un numero al usuario
 	System.out.println("Di un numero");
 	//le truncamos el numero
-	resultado = reader.nextDouble();
-	numero = (int) resultado;
+	numero = reader.nextDouble();	
 	//le decimos el numero
-	System.out.println("Tu numero truncado da " + numero);
+	System.out.println("Tu numero redondeado es " + (int) (numero + 0.5));
 	//cerramos el escaner
 	reader.close();
-
 	}
 }
