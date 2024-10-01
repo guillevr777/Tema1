@@ -2,7 +2,7 @@ package parte2;
 
 import java.util.Scanner;
 
-public class ejer17 {
+public class ejer2 {
 	
 	public static void main(String[]args) {
 	//creamos el escaner
