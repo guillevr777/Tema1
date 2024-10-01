@@ -16,8 +16,8 @@ public class ejer7 {
 		int personas;
 		int niños;
 		//variables para calcular total de entradas adultos y niños por separado
-		double x;
-		double y;
+		double entradaNiños;
+		double entradaAdulto;
 		//variable del calculo total
 		double resultadofinal;
 		//Pedimos numero de personas total
@@ -27,10 +27,10 @@ public class ejer7 {
 		System.out.println("Di cuantos son menores");
 		niños = reader.nextInt();
 		//Calculamos el total de entradas para adultos y niños
-		x = (personas - niños) * 20;
-		y = niños*15.50;
+		entradaNiños = (personas - niños) * 20;
+		entradaAdulto = niños*15.50;
 		//Calculamos el descuento
-		resultado  = (x + y);
+		resultado  = (entradaNiños + entradaAdulto);
 		descuento = resultado<=100 ? 0 : resultado*0.05;
 		resultadofinal = resultado - descuento;
 		//mostramos el resultado
