@@ -11,11 +11,11 @@ public class ejer3 {
 		int num2;
 		int resultado;
 		//le preguntamos por los numerillos
-		System.out.println("Di un numero joder ostia puta");
+		System.out.println("Di un numero");
 		//hacemos las operacion
 		num1 = reader.nextInt();
 		//le preguntamos por los numerillos
-		System.out.println("Di un numero joder ostia puta");
+		System.out.println("Di otro numero");
 		//hacemos las operacion
 		num2 = reader.nextInt();
 		//Hacemos las operaciones

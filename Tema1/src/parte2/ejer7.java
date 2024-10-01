@@ -6,24 +6,35 @@ public class ejer7 {
 	public static void main(String[]args) {
 		//creamos el escaner
 		Scanner reader = new Scanner(System.in);
-		//creamos las variables
-		double mili;
-		double centi;
-		double metro;
+		//Creamos las 2 variables que tendran valores constantes
+		final double menor = 15.50;
+		final double mayor = 20;
+		
+		double descuento; 
 		double resultado;
-		//Pedimos valor a
-		System.out.println("Di los milimetros");
-		mili = reader.nextDouble();
-		//Pedimos valor a
-		System.out.println("Di los centimetros");
-		centi = reader.nextDouble();
-		//Pedimos valor a
-		System.out.println("Di los metros");
-		metro = reader.nextDouble();
-		//hacemos la operacion
-		resultado = centi + mili/10 + metro*100;
+		//variables para recoger el numero de personas (tanto adultos como menores) y niños (solo menores)
+		int personas;
+		int niños;
+		//variables para calcular total de entradas adultos y niños por separado
+		double x;
+		double y;
+		//variable del calculo total
+		double resultadofinal;
+		//Pedimos numero de personas total
+		System.out.println("Di el numero de personas");
+		personas = reader.nextInt();
+		//Pedimos el numero de menores entre el total de personas
+		System.out.println("Di cuantos son menores");
+		niños = reader.nextInt();
+		//Calculamos el total de entradas para adultos y niños
+		x = (personas - niños) * 20;
+		y = niños*15.50;
+		//Calculamos el descuento
+		resultado  = (x + y);
+		descuento = resultado<=100 ? 0 : resultado*0.05;
+		resultadofinal = resultado - descuento;
 		//mostramos el resultado
-		System.out.println("Sera un total de " + resultado + " centimetros.");
+		System.out.println("Sera un total de " + resultadofinal + " descontando el 5% por superar los 100 euros , el descuento total ha sido de " + descuento);
 		//cerramos el escaner
 		reader.close();
 	}
