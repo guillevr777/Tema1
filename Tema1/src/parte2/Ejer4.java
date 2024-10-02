@@ -2,7 +2,7 @@ package parte2;
 
 import java.util.Scanner;
 
-public class ejer4 {
+public class Ejer4 {
 	public static void main(String[]args) {
 		//operacion a realizar
 		//y=ax2+bx+c

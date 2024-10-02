@@ -2,7 +2,7 @@ package parte1;
 
 import java.util.Scanner;
 
-public class ejer3 {
+public class Ejer3 {
 	public static void main(String[] args) {
         //creamos el escaner
         Scanner reader = new Scanner(System.in);

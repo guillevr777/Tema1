@@ -2,7 +2,7 @@ package parte1;
 
 import java.util.Scanner;
 
-public class ejer4 {
+public class Ejer4 {
 	public static void main(String[] args) {
 		double nota1;
 		double nota2;

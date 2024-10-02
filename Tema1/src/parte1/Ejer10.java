@@ -2,13 +2,14 @@ package parte1;
 
 import java.util.Scanner;
 
-public class ejer9 {
+public class Ejer10 {
 	
-		public static void main(String[] args) {
+	public static void main(String[] args) {
+		
 		//hacemos las variables
 			
-		int age;
-		boolean overage = true;
+		int numero;
+		boolean parimpar;
 		
 		//creamos el escaner
 		
@@ -16,17 +17,17 @@ public class ejer9 {
 		
 		//preguntamos por la edad
 		
-		System.out.print("Que edad tienes?");
+		System.out.println("Di un numero");
 		
-		age = reader.nextInt();
+		numero = reader.nextInt();
 		
 		//usamos relacionales , si la edad es supeior a 18 true sino false
 		
-		overage = age>=18;
+		parimpar = numero % 2 == 0;
 		
 		//pone la respuesta en pantalla
 		
-		System.out.print(overage);
+		System.out.print(parimpar);
 			
 		reader.close();
 		}

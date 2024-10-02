@@ -2,7 +2,7 @@ package parte1;
 
 import java.util.Scanner;
 
-public class ejer11 {
+public class Ejer11 {
 	
 	public static void main(String[]args) {
 		//presentamos las variables
